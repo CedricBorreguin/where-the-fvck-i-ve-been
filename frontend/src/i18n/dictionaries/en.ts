@@ -1,0 +1,38 @@
+const EN: { [key: string]: string } = {
+    app_title: "Where the fvck I've been?",
+    step_1: "1. Select the JSON file exported from Google Maps",
+    step_2: "2. Select the date filter mode",
+    drag_json_here: "Drag a JSON file here",
+    or: "or",
+    pick_file: "Choose file",
+    loaded_file: "Loaded file:",
+    change_file: "Change file",
+    select_year: "Year",
+    select_month: "Month",
+    identify_cities: "Identify cities",
+    distinct_cities: "Distinct cities",
+    confirm: "Confirm",
+    back: "Back",
+    get_your_timeline: "Get your Google Maps Timeline data",
+    android: "Android",
+    ios: "iOS",
+    developed_by: "Developed by",
+    source_code_available_on: "Source code available on",
+    android_steps_1: "On your Android phone or tablet, open the Settings app",
+    android_steps_2: "Tap Location > Location services > Timeline.",
+    android_steps_3: "Under “Timeline,” tap Export Timeline data.",
+    android_steps_4: "Tap Continue.",
+    android_steps_5: "Select your preferred storage location.",
+    android_steps_6:
+        'Tap Save. (After the export completes, a popup notification shows "Export complete.")',
+    ios_steps_1: "On your iPhone or iPad, open the Google Maps app",
+    ios_steps_2: "Tap your profile picture or initial Account Circle > Settings",
+    ios_steps_3: 'Under "Account Settings," tap Personal content.',
+    ios_steps_4: 'Under "Location settings," tap Export Timeline data.',
+    ios_steps_5: "On the iOS share sheet, tap Save to Files.",
+    ios_steps_6: "Select your preferred storage location.",
+    ios_steps_7:
+        "At the top right, tap Save. (Your exported Timeline data is saved as “location-history.json.”)",
+};
+
+export default EN;

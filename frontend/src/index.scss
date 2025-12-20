@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    background-color: #e6efff;
+    height: 100%;
+    width: 100%;
+}
+
+$color-primary: #008080;
+$color-primary-dark: #104040;
+$color-primary-light: #80ffff;
+$color-accent: #d47b47;
+$color-accent-dark: #802f00;
+$color-accent-light: #ffc9aa;
+
+#root {
+    height: 100%;
+    width: 100%;
+    background-color: #e6efff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    --color-primary: #{$color-primary};
+    --color-primary-dark: #{$color-primary-dark};
+    --color-primary-light: #{$color-primary-light};
+    --color-accent: #{$color-accent};
+    --color-accent-dark: #{$color-accent-dark};
+    --color-accent-light: #{$color-accent-light};
+}
+
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+input,
+a,
+button,
+select,
+span,
+textarea {
+    font-family: "Ubuntu", sans-serif;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.react-responsive-modal-modal.settingsModal {
+    width: 85%;
+    padding: 25px;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+
+    --color-primary: #{$color-primary};
+    --color-primary-dark: #{$color-primary-dark};
+    --color-primary-light: #{$color-primary-light};
+    --color-accent: #{$color-accent};
+    --color-accent-dark: #{$color-accent-dark};
+    --color-accent-light: #{$color-accent-light};
+}

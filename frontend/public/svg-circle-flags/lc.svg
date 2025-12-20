@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-lc">
+      <circle cx="250" cy="250" r="230"/>
+    </clipPath>
+  </defs>
+  
+  <!-- White border circle -->
+  <circle cx="250" cy="250" r="250" fill="white"/>
+  
+  <!-- Clipped original content -->
+  <g clip-path="url(#clip-lc)">
+    <g transform="translate(-210.00000000000006, 19.99999999999997) scale(1.5333333333333334)">
+      <g transform="translate(0, 0)">
+        
+<rect fill="#6Cf" width="600" height="300"/>
+<polygon fill="#FFF" points="200,274 300,260 400,274 300,27"/>
+<polygon points="213.5,274 300,260 386.5,274 300,60"/>
+<polygon fill="#FCD116" points="200,274 400,274 300,150"/>
+
+      </g>
+    </g>
+  </g>
+</svg>

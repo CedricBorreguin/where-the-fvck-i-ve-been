@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-to">
+      <circle cx="250" cy="250" r="230"/>
+    </clipPath>
+  </defs>
+  
+  <!-- White border circle -->
+  <circle cx="250" cy="250" r="250" fill="white"/>
+  
+  <!-- Clipped original content -->
+  <g clip-path="url(#clip-to)">
+    <g transform="translate(-210, 20) scale(9.583333333333334)">
+      <g transform="translate(0, 0)">
+        <g fill="#C10000"><path d="M0 0h96v48H0z"/><path fill="#fff" d="M0 0h40v24H0z"/><path d="M17 3h6v18h-6z"/><path d="M11 9h18v6H11z"/></g>
+      </g>
+    </g>
+  </g>
+</svg>
