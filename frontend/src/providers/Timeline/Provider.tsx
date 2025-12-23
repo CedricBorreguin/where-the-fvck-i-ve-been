@@ -28,7 +28,7 @@ const TimelineProvider: React.FC<{ children: React.ReactNode }> = ({ children })
                     const result = TimelineSchema.safeParse(jsonData);
                     if (!result.success) {
                         console.error("Invalid riddle data:", result.error);
-                        setError("JSON invalido, verifica que seguiste las instrucciones.");
+                        setError("json_file_error");
                         return;
                     }
                     const riddleData = result.data;
@@ -66,10 +66,13 @@ const TimelineProvider: React.FC<{ children: React.ReactNode }> = ({ children })
 
                     console.log("Unique places visited:", Object.keys(places).length);
                     setPlaces(places);
+                    if(Object.keys(places).length === 0) {
+                        setError("no_places_found");
+                    }
                 } catch (error) {
                     console.error("Error parsing JSON:", error);
                     setPlaces({});
-                    setError("JSON invalido, verifica que seguiste las instrucciones.");
+                    setError("json_file_error");
                 }
             };
             reader.readAsText(file);

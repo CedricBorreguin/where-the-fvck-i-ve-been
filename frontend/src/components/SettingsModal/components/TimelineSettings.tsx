@@ -32,7 +32,7 @@ const TimelineSettings: React.FC<{
     setPage: React.Dispatch<React.SetStateAction<"timeline" | "info">>;
 }> = ({ onClose, setPage }) => {
     const { selectedLang, translate } = useI18n();
-    const { file, setFile } = useTimelineContext();
+    const { file, setFile, error } = useTimelineContext();
     const {
         fetchGeohashDetailsCallback,
         dateMode,
@@ -98,7 +98,10 @@ const TimelineSettings: React.FC<{
     return (
         <>
             <div className="settingsContainer__header">
-                <h3>{translate("step_1")}</h3>
+                <div>
+                    <h3>{translate("step_1")} </h3>
+                    <span onClick={() => setPage("info")}>{translate("what_is_json")}</span>
+                </div>
                 <button
                     className="info-button"
                     type="button"
@@ -210,6 +213,8 @@ const TimelineSettings: React.FC<{
                 </div>
             )}
 
+            {error && <div className="errorMessage">{translate(error)}</div>}
+
             <div className="settingsContainer__footer">
                 <button
                     type="button"
@@ -253,14 +258,11 @@ const TimelineSettings: React.FC<{
                 </div>
             )}
 
-            <button
-                className="closeButton"
-                type="button"
-                disabled={loading || Object.keys(filteredCities).length === 0}
-                onClick={onClose}
-            >
-                {translate("confirm")}
-            </button>
+            {Object.keys(filteredCities).length > 0 && (
+                <button className="closeButton" type="button" disabled={loading} onClick={onClose}>
+                    {translate("confirm")}
+                </button>
+            )}
         </>
     );
 };

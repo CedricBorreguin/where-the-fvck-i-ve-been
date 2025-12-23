@@ -53,6 +53,9 @@ const InfoPage: React.FC<{
                         <li>{translate("ios_steps_7")}</li>
                     </ol>
                 )}
+                <h3>{translate("json_title_def")}</h3>
+                <p>{translate("json_description")}</p>
+                <p>{translate("json_description_2")}</p>
             </div>
             <h3>{translate("app_title")}</h3>
             <p>Version: 1.1.0</p>
@@ -83,7 +86,13 @@ const InfoPage: React.FC<{
             </div>
             <p>
                 {translate("source_code_available_on")}{" "}
-                <a href="https://github.com/CedricBorreguin/where-the-fvck-i-ve-been">GitHub</a>
+                <a
+                    href="https://github.com/CedricBorreguin/where-the-fvck-i-ve-been"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    GitHub
+                </a>
             </p>
         </div>
     );

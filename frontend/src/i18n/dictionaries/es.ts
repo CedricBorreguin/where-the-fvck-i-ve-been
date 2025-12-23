@@ -1,7 +1,7 @@
 const ES: { [key: string]: string } = {
     app_title: "¿A dónde fui a parar?",
     step_1: "1. Selecciona el archivo JSON exportado de Google Maps",
-    step_2: "2. Selecciona el modo de filtro de fechas",
+    step_2: "2. Selecciona el rango de tiempo que quieres mostrar",
     drag_json_here: "Arrastra un archivo JSON aquí",
     or: "o",
     pick_file: "Elegir archivo",
@@ -10,13 +10,21 @@ const ES: { [key: string]: string } = {
     select_year: "Año",
     select_month: "Mes",
     identify_cities: "Identificar ciudades",
-    distinct_cities: "Ciudades distintas",
+    distinct_cities: "3. Selecciona las ciudades que quieres mostrar en el mapa",
     confirm: "Confirmar",
     back: "Regresar",
     get_your_timeline: "Obtén tus datos de Rutas de Google Maps",
     android: "Android",
     ios: "iOS",
     developed_by: "Desarrollado por",
+    what_is_json: "¿Qué es un archivo JSON y cómo obtenerlo?",
+    json_file_error: "JSON invalido, verifica que seguiste las instrucciones correctamente y que tenías activado el Historial de Rutas.",
+    no_places_found: "Tu archivo parece no tener ninguna ubicación válida. Asegúrate de que tu Historial de Rutas estaba activo.",
+    json_title_def: "¿Qué es un archivo JSON?",
+    json_description:
+        "Un archivo JSON es un formato de archivo que almacena datos estructurados en texto legible por humanos.",
+    json_description_2:
+        "Google Maps utiliza archivos JSON para exportar datos de tu historial de ubicaciones, que incluyen detalles sobre los lugares que has visitado y las rutas que has tomado.",
     source_code_available_on: "Código fuente disponible en",
     android_steps_1: "En tu teléfono o tableta Android, abre la aplicación Configuración",
     android_steps_2: "Presiona Ubicación > Servicios de ubicación > Rutas.",
@@ -26,8 +34,7 @@ const ES: { [key: string]: string } = {
     android_steps_6:
         "Presiona Guardar. (Cuando se complete la exportación, aparecerá una notificación emergente con el mensaje “Se completó la exportación”.)",
     ios_steps_1: "En tu iPhone o iPad, abre la app de Google Maps.",
-    ios_steps_2:
-        "Presiona tu inicial o foto de perfil Ícono circular de la cuenta > Configuración.",
+    ios_steps_2: "Presiona tu inicial o foto de perfil > Configuración.",
     ios_steps_3: "En “Configuración de la cuenta”, presiona Contenido personal.",
     ios_steps_4: "En “Configuración de ubicación”, presiona Exportar datos de Rutas.",
     ios_steps_5: "En la hoja para compartir de iOS, presiona Guardar en Archivos.",
